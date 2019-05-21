@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/C___threads.dir/main.cpp.o CMakeFiles/C___threads.dir/Sum_table.cpp.o CMakeFiles/C___threads.dir/Matrix.cpp.o CMakeFiles/C___threads.dir/Eratosthenes_sieve.cpp.o CMakeFiles/C___threads.dir/My_list2.cpp.o CMakeFiles/C___threads.dir/Sume.cpp.o CMakeFiles/C___threads.dir/menu.cpp.o  -o C___threads 

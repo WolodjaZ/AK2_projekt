@@ -1,0 +1,36 @@
+Algorytmy działające na wątkach:
+
+1)
+Tworzymy dwie macierze z losowymi wartościami o określonych wysokościach i szerokościach przy założeniach że owe macierze bedą ze sobą mnożone.
+Zadaniem każdego wątka będzie obliczenia wyniku mnożenia dla swojego wierszu, jeśli watków będzie za dużo to watek będzie zajmować się swoją komórką.
+Gdy wątek skończy prace na swoim wierszu bądz komórce to przechodzi do kolejnego wierszu bądz komurki wolnej.
+Wątek kończy się kiedy nie ma już wierszy/komórek do policzena.
+
+2)
+Tworzymy tablice liczb z zakresu podanego przez użytkownika np. od 2 do 800. Zadaniem algorytmu jest wypisanie wszystkich liczb pierwszych z danego przedzialu metodą sita Erastotenesa.
+Każdy wątek wykreśla(zastępuje zerem) wszystkie wielokrotności liczby podstawowej i wypisuje indeks początkowy.
+Wątki przechowują w liscie indeksy na których pracują aby nie zaszła kolizja.
+Wątek po wykręsleniu przechodzi do kolejnego nie zerowego elementu(kolejnego po liscie) i jeśli nie występuje indeks w liscie to zaczyna wykreślanie.
+Wątki kończą prace kiedy już nie ma wolnych indeksów.
+
+3)
+Tworzymy N elementową tablice o losowych wartościach.
+Tworzymy wątki o kolejnych indeksach z wielokrotnością 10 czyli 0, 10, 20 ...
+Wątki dodają na swój indeks sume elementów ze swojego zakresu i zeruje reszta a potem przechodzą do kolejnego indeksu wyliczonego poprzez liczba_wątków*10+indeks.
+Kiedy ideks wątku wyjdzie poza tablice wątek jest wstrzymywany.
+Kiedy wszystkie liczby zostaną zliczone tablica reanżuje się usuwając zerowe element.
+Po przearanżacji wątki zaczynają prace z indeksami nominalymi.
+Jęsli wątek był wstrzymany a jego zakres wychodzi boza nową tablice to wątek usuwamy.
+Kiedy w liście zostanie jeden element kończymy pracę.
+
+4)
+Dodawanie M tablic N elementowych w nową tablice.
+każdy wątek ma swój przedział indeksowy dodawania zliczany poprzez N/liczba_wątków + indeks
+Po dokonaniu dodawania elementów do nowej talbicy wątek kończy swoją pracę.
+Kiedy wszystkie wątki umrą program kończy pracę.
+
+albo 5)
+Dodawanie M tablic N elementowych w nową tablice.
+Wątek przechodzi po indeksach i sumuje wartości z M tablic do nowej tablicy z indeksu blokując dostęp do indeksu na którym pracuje.
+Kolejny wątek przechodzi do inedksu który nie jest zablokowany i dopiero wtedy zaczyna zliczanie.
+Program kończy się kiedy nie ma już wątków.
