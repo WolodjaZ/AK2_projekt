@@ -1,3 +1,0 @@
-/home/vladimir/Desktop/github-file/AK2_project/C++_threads/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/vladimir/Desktop/github-file/AK2_project/C++_threads/cmake-build-debug/CMakeFiles/C___threads.dir
-/home/vladimir/Desktop/github-file/AK2_project/C++_threads/cmake-build-debug/CMakeFiles/edit_cache.dir
