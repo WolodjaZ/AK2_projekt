@@ -120,7 +120,7 @@ void Matrix::print_result() {
 
     }
 
-    std::cout << "Time: " << time1 << std::endl;
+    std::cout << "Time: " << time1*1000 << " in [ms]" << std::endl;
 }
 
 double Matrix::time() {

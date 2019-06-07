@@ -75,7 +75,7 @@ void Eratosthenes_sieve::print() {
     }
     std::cout << std::endl;
 
-    std::cout << "Time: " << time1 << std::endl;
+    std::cout << "Time: " << time1*1000 << " in [ms]" << std::endl;
 }
 
 double Eratosthenes_sieve::time() {

@@ -52,7 +52,7 @@ void Sume::print() {
 
 void Sume::pirnt_result() {
     std::cout << "Wynik: " << tab[0] << std::endl;
-    std::cout << "Time: " << time1 << std::endl;
+    std::cout << "Time: " << time1*1000 << " in [ms]" << std::endl;
 }
 
 double Sume::time() {

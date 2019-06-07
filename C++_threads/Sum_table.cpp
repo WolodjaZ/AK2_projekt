@@ -72,7 +72,7 @@ void Sum_table::print_result() {
     }
 
     std::cout << std::endl;
-    std::cout << "Time: " << time1 << std::endl;
+    std::cout << "Time: " << time1*1000 << " in [ms]" << std::endl;
 }
 
 void Sum_table::add(int start, int end) {

@@ -97,7 +97,7 @@ void menu::sume_tables() {
                         s->start();
                         wynik += s->time();
                     }
-                    std::cout << "Czas dla liczby wątków: " << a << " wynosi w mikorsekundy " <<  wynik*10 << std::endl;
+                    std::cout << "Czas dla liczby wątków: " << a << " wynosi w [ms] " <<  wynik*10 << std::endl;
                 }
                 break;
             case 4:
@@ -112,6 +112,7 @@ void menu::sume_tables() {
                             s->start();
                             wynik += s->time();
                         }
+                        std::cout << "Czas dla liczby wątków: " << a << " wynosi w [ms] " <<  wynik*10 << std::endl;
                         myfile << wynik*10 << "\n";
                     }
                     cout << "ZAPISYWANIE ZAKOŃCZONE" << endl;
@@ -167,7 +168,7 @@ void menu::sume() {
                         s->start();
                         wynik += s->time();
                     }
-                    std::cout << "Czas dla liczby wątków: " << a << " wynosi w mikorsekundy " <<  wynik*10 << std::endl;
+                    std::cout << "Czas dla liczby wątków: " << a << " wynosi w [ms] " <<  wynik*10 << std::endl;
                 }
                 break;
             case 4:
@@ -234,7 +235,7 @@ void menu::first_numbers() {
                         s.start();
                         wynik += s.time();
                     }
-                    std::cout << "Czas dla liczby wątków: " << a << " wynosi w mikorsekundy " <<  wynik*10 << std::endl;
+                    std::cout << "Czas dla liczby wątków: " << a << " wynosi w [ms] " <<  wynik*10 << std::endl;
                 }
                 break;
             case 4:
@@ -248,6 +249,7 @@ void menu::first_numbers() {
                             s.start();
                             wynik += s.time();
                         }
+                        std::cout << "Czas dla liczby wątków: " << a << " wynosi w [ms] " <<  wynik*10 << std::endl;
                         myfile << wynik*10 << "\n";
                     }
                     cout << "ZAPISYWANIE ZAKOŃCZONE" << endl;
@@ -307,7 +309,7 @@ void menu::sume_matrix() {
                         s->start();
                         wynik += s->time();
                     }
-                    std::cout << "Czas dla liczby wątków: " << a << " wynosi w mikorsekundy " <<  wynik*10 << std::endl;
+                    std::cout << "Czas dla liczby wątków: " << a << " wynosi w [ms] " <<  wynik*10 << std::endl;
                 }
                 break;
             case 4:
@@ -318,10 +320,11 @@ void menu::sume_matrix() {
                         double wynik = 0;
                         for(int b = 0; b < 100; b++){
                             delete s;
-                            s = new Matrix(1000, 1000, 1000, 1000, a);
+                            s = new Matrix(1000, 100, 100, 1000, a);
                             s->start();
                             wynik += s->time();
                         }
+                        std::cout << "Czas dla liczby wątków: " << a << " wynosi w [ms] " <<  wynik*10 << std::endl;
                         myfile << wynik*10 << "\n";
                     }
                     cout << "ZAPISYWANIE ZAKOŃCZONE" << endl;
